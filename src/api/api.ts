@@ -1,4 +1,5 @@
-const API_BASE_URL = 'http://localhost:8080';
+// API_BASE_URL を環境変数から取得するように変更
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8080';  // ローカルデフォルト値を設定
 
 export const fetchFromAPI = async (
     endpoint: string,
